@@ -1,0 +1,55 @@
+{
+	"plan": {
+		"itinerary": [
+			{
+				"day": 1,
+				"title": "Grand Palaces & River Life",
+				"morning": {
+					"activity": "The Grand Palace & Wat Phra Kaew",
+					"description": "Start your day at the city's most famous landmark. Explore the former residence of the Kings of Siam and marvel at the sacred Emerald Buddha housed within Wat Phra Kaew. Remember to dress respectfully with shoulders and knees covered."
+				},
+				"lunch": {
+					"description": "Dine at a local restaurant near the Tha Tien Pier area, offering authentic Thai cuisine with views of the river and Wat Arun.",
+					"food_suggestions": [
+						"Pad Thai Goong Sod (Stir-fried noodles with fresh prawns)",
+						"Tom Yum Goong (Spicy shrimp soup)",
+						"Khao Pad Sapparot (Pineapple fried rice)"
+					]
+				},
+				"afternoon": {
+					"activity": "Wat Pho & Wat Arun",
+					"description": "First, visit Wat Pho to see the incredible 46-meter-long Reclining Buddha. Afterwards, take a quick cross-river ferry to Wat Arun (The Temple of Dawn) and climb its steep, porcelain-covered prang for breathtaking panoramic views of the city and river, especially beautiful during sunset."
+				},
+				"evening": {
+					"activity": "Dinner Cruise on the Chao Phraya River",
+					"description": "Experience Bangkok's glittering skyline from the water. Enjoy a buffet of Thai and international cuisine, often accompanied by live music and traditional dance performances, as you float past illuminated temples and skyscrapers."
+				}
+			},
+			{
+				"day": 2,
+				"title": "Markets, Modernity & Rooftop Views",
+				"morning": {
+					"activity": "Chatuchak Weekend Market or Or Tor Kor Market",
+					"description": "If it's a weekend, dive into the vast Chatuchak Market, with over 15,000 stalls selling everything from clothing to antiques. On a weekday, or for a more food-focused experience, visit the adjacent Or Tor Kor Market, known for its premium quality produce and ready-to-eat meals."
+				},
+				"lunch": {
+					"description": "Enjoy a casual lunch by sampling various street food delights directly from the vendors at the market.",
+					"food_suggestions": [
+						"Moo Ping (Grilled pork skewers)",
+						"Som Tum (Spicy green papaya salad)",
+						"Coconut Ice Cream (Served in a coconut shell)",
+						"Khao Niew Mamuang (Mango sticky rice)"
+					]
+				},
+				"afternoon": {
+					"activity": "Jim Thompson House & Siam Shopping Malls",
+					"description": "Escape the city buzz in the tranquil, lush gardens of the Jim Thompson House, a museum of beautiful traditional Thai-style houses. Afterwards, experience modern Bangkok by exploring the massive, interconnected shopping malls like Siam Paragon, CentralWorld, and MBK Center."
+				},
+				"evening": {
+					"activity": "Rooftop Bar & Exploring Yaowarat Road (Chinatown)",
+					"description": "Head to a rooftop bar like Sky Bar or Mahanakhon SkyWalk for sunset cocktails and stunning 360-degree city views. Afterwards, take a taxi or MRT to Yaowarat Road in Chinatown to immerse yourself in the vibrant chaos of neon lights, street-side restaurants, and incredible food stalls."
+				}
+			}
+		]
+	}
+}
