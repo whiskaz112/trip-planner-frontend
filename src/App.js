@@ -75,7 +75,7 @@ function App() {
 
   async function fetchData() {
     return await fetch(
-      "https://trip-planner-lbspb4jy1-klogics-projects.vercel.app/api/generate-plan",
+      import.meta.env.VITE_REACT_APP_TRIP_PLANNER_API_URL,
       {
         method: "POST",
         headers: {
