@@ -124,7 +124,7 @@ Now, let's see our workflows in action\!
     ```bash
     git checkout -b my-feature-update
     ```
-3.  **Make a small change:** For example, edit the `README.md` file and add some text.
+3.  **Make a small change:** For example, edit the `README.md` file and add some text. 11
 4.  **Commit and push your branch:**
     ```bash
     git add .
