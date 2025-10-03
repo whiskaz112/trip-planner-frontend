@@ -51,7 +51,7 @@ jobs:
   # First, run the CI checks to ensure the code builds and tests pass
   run-ci-checks:
     name: Build & Test
-    uses: LSEG-Immersion-Day-DevOps-workshop-2025/actions/.github/workflows/build-test-ci@main
+    uses: LSEG-Immersion-Day-DevOps-workshop-2025/actions/.github/workflows/build-test-ci.yml@main
 
   # If CI passes, this job will run a security scan on the Docker image
   run-security-scan:

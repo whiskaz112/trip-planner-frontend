@@ -75,7 +75,8 @@ function App() {
 
   async function fetchData() {
     return await fetch(
-      import.meta.env.VITE_REACT_APP_TRIP_PLANNER_API_URL,
+      process.env.REACT_APP_TRIP_PLANNER_API_URL
+      ,
       {
         method: "POST",
         headers: {
