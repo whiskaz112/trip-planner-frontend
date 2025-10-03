@@ -1,0 +1,28 @@
+name: Deploy to Docker Hub
+
+# This workflow triggers ONLY on pushes to the main branch
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  # First, run the CI checks to ensure the code is valid
+  run-ci-checks:
+    name: Build & Test
+    uses: LSEG-Immersion-Day-DevOps-workshop-2025/actions/.github/workflows/build-test-ci.yml@main
+
+  # If CI passes, this job will build and push the Docker image
+  build-and-push-image:
+    name: Push to Docker Hub
+    # This job depends on the successful completion of the 'run-ci-checks' job
+    needs: run-ci-checks
+    uses: LSEG-Immersion-Day-DevOps-workshop-2025/actions/.github/workflows/docker-push-ci.yml@main
+    with:
+      # IMPORTANT: Replace 'your-dockerhub-username' with your actual Docker Hub username
+      image_name: whiskaz112/trip-planner-frontend
+      # We use the unique Git commit SHA as the image tag for versioning
+      tag: ${{ github.sha }}
+    secrets:
+      # These secrets must be created in your repository's settings
+      DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
