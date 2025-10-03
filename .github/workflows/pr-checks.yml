@@ -1,0 +1,19 @@
+name: Pull Request Checks
+
+# This workflow triggers ONLY on pull requests targeting the main branch
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  # First, run the CI checks to ensure the code builds and tests pass
+  run-ci-checks:
+    name: Build & Test
+    uses: LSEG-Immersion-Day-DevOps-workshop-2025/actions/.github/workflows/build-test-ci.yml@main
+
+  # If CI passes, this job will run a security scan on the Docker image
+  run-security-scan:
+    name: Trivy Vulnerability Scan
+    # This job depends on the successful completion of the 'run-ci-checks' job
+    needs: run-ci-checks
+    uses: LSEG-Immersion-Day-DevOps-workshop-2025/actions/.github/workflows/security-scan-ci.yml@main
